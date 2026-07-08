@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Learning Journey Website
 
-## Getting Started
+`My Learning Journey Website` is a responsive Next.js App Router project that introduces the student, explains their learning path, and organizes blog-style study notes about frontend, backend, and mobile development.
 
-First, run the development server:
+## Features
+
+- Next.js App Router structure with nested layouts
+- TypeScript throughout the project
+- Tailwind CSS for responsive styling
+- Shared root layout with global navigation and footer
+- Nested blog layout for `/blog/*` pages
+- Unique metadata for every page
+- Custom `404` page
+- Loading states for the root and blog routes
+- Reusable `Button`, `Card`, `PageHero`, and heading components
+- Professional, mobile-friendly layout
+
+## Technologies Used
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- `next/font` with locally bundled font assets for offline builds
+
+## Setup
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+app/
+components/
+data/
+lib/
+public/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pages and Routes
 
-## Learn More
+- `/` - Home
+- `/about` - About
+- `/contact` - Contact
+- `/blog` - Blog overview
+- `/blog/frontend` - Frontend learning notes
+- `/blog/backend` - Backend learning notes
+- `/blog/mobile` - Mobile learning notes
+- `404` - Custom not found page
 
-To learn more about Next.js, take a look at the following resources:
+## App Router Concepts Demonstrated
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Root layout at `app/layout.tsx`
+- Nested blog layout at `app/blog/layout.tsx`
+- Page routes with `page.tsx`
+- Loading UI with `loading.tsx`
+- Custom `not-found.tsx`
+- File-based metadata with unique titles and descriptions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Root Layout
 
-## Deploy on Vercel
+The root layout provides the shared shell for the whole site:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `html` and `body` tags
+- Global font setup using `next/font`
+- Navbar on every page
+- Footer on every page
+- Base background and typography styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Nested Blog Layout
+
+The blog layout wraps `/blog`, `/blog/frontend`, `/blog/backend`, and `/blog/mobile`.
+
+- Blog header at the top
+- Blog sidebar on desktop
+- Stacked blog navigation on mobile
+- Shared blog content area
+
+## SEO Metadata
+
+Every route exports unique metadata with its own title and description so the pages are easier to identify in search and sharing previews.
+
+## Responsive Design
+
+The site is designed for mobile, tablet, and desktop:
+
+- Responsive navbar with mobile menu
+- Flexible card grids
+- Sidebar that stacks on small screens
+- Readable text widths and spacing
+- Tap-friendly buttons and links
+
+## Bonus Features Implemented
+
+- Custom `404` page
+- Root loading state
+- Blog loading state
+- Reusable button component used across the site
+
+## Deployment
+
+### GitHub
+
+- Create a repository for this project
+- Push the code from this workspace
+
+### Vercel
+
+- Import the GitHub repository into Vercel
+- Use the default Next.js settings
+- Deploy from the `main` branch
+
+### Placeholders
+
+- GitHub repository link: `https://github.com/your-username/your-repo`
+- Live Vercel deployment link: `https://your-project.vercel.app`
+
+## Notes
+
+- No backend or environment variables are required for this assignment.
+- The contact form is frontend-only and does not submit data to a server.
