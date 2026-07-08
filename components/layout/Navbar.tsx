@@ -60,7 +60,7 @@ export function Navbar() {
                             href={sub.href}
                             className={cn(
                               "rounded-md px-3 py-2 text-sm font-medium block",
-                              pathname === sub.href || (sub.href !== "/" && pathname.startsWith(sub.href))
+                              pathname === sub.href || pathname.startsWith(sub.href)
                                 ? "bg-accent-soft text-accent-strong"
                                 : "text-slate-600 hover:bg-slate-50 hover:text-slate-950",
                             )}
@@ -170,7 +170,7 @@ export function Navbar() {
                               onClick={() => setOpen(false)}
                               className={cn(
                                 "rounded-2xl px-3 py-2 text-sm font-medium",
-                                pathname === sub.href || (sub.href !== "/" && pathname.startsWith(sub.href))
+                                pathname === sub.href || pathname.startsWith(sub.href)
                                   ? "bg-accent-soft text-accent-strong"
                                   : "bg-slate-50 text-slate-700",
                               )}
