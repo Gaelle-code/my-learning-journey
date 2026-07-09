@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/logo.svg",
-    apple: "/logo.svg",
+    icon: [{ url: "/logo.jpg", type: "image/jpg" }],
+    apple: "/logo.jpg",
   },
 };
 

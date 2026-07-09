@@ -1,24 +1,24 @@
 # My Learning Journey Website
 
-`My Learning Journey Website` is a responsive Next.js App Router project that introduces the student, explains their learning path, and organizes blog-style study notes about frontend, backend, and mobile development.
+`My Learning Journey Website` is a responsive Next.js App Router project that introduces a student, explains their learning path, and organizes blog-style study notes about frontend, backend, and mobile development.
 
 ## Features
 
 - Next.js App Router structure with nested layouts
 - TypeScript throughout the project
-- Tailwind CSS for responsive styling
+- Tailwind CSS 4 for responsive styling
 - Shared root layout with global navigation and footer
 - Nested blog layout for `/blog/*` pages
 - Unique metadata for every page
 - Custom `404` page
 - Loading states for the root and blog routes
 - Reusable `Button`, `Card`, `PageHero`, and heading components
-- Professional, mobile-friendly layout
+- Professional, mobile-friendly design
 
 ## Technologies Used
 
-- Next.js 16
-- React 19
+- Next.js 16.2.10
+- React 19.2.4
 - TypeScript
 - Tailwind CSS 4
 - `next/font` with locally bundled font assets for offline builds
@@ -89,26 +89,31 @@ The blog layout wraps `/blog`, `/blog/frontend`, `/blog/backend`, and `/blog/mob
 - Stacked blog navigation on mobile
 - Shared blog content area
 
-## SEO Metadata
+## Metadata and SEO Setup
 
-Every route exports unique metadata with its own title and description so the pages are easier to identify in search and sharing previews.
+- Every page exports unique metadata
+- Page titles and descriptions match the page purpose
+- Default metadata is provided by the root layout
 
 ## Responsive Design
 
-The site is designed for mobile, tablet, and desktop:
-
-- Responsive navbar with mobile menu
+- Mobile-first layout
+- Collapsible or stacked navigation
 - Flexible card grids
-- Sidebar that stacks on small screens
-- Readable text widths and spacing
-- Tap-friendly buttons and links
+- Readable text widths
+- No horizontal overflow
+- Comfortable tap targets
 
-## Bonus Features Implemented
+## Project Background
 
-- Custom `404` page
-- Root loading state
-- Blog loading state
-- Reusable button component used across the site
+This assignment demonstrates a clean App Router project with student profile content and learning topic organization. It replaces the starter scaffold with typed reusable components and a structured content flow.
+
+## Development Notes
+
+- Shared content is organized in data files to reduce repetition
+- The contact page is frontend-only and static
+- Navbar and footer are centralized for consistent layout
+- Blog routes share a nested layout and sidebar navigation
 
 ## Deployment
 
@@ -120,13 +125,37 @@ The site is designed for mobile, tablet, and desktop:
 ### Vercel
 
 - Import the GitHub repository into Vercel
-- Use the default Next.js settings
+- Keep the default Next.js settings
 - Deploy from the `main` branch
+- Verify the live site on desktop and mobile
 
-### Placeholders
+## Environment Variables
 
-- GitHub repository link: `https://github.com/your-username/your-repo`
-- Live Vercel deployment link: `https://your-project.vercel.app`
+- None required
+
+## Final Submission Checklist
+
+- [x] App builds successfully
+- [x] Required pages exist
+- [x] Root layout is in place
+- [x] Nested blog layout is in place
+- [x] Metadata is unique per page
+- [x] Loading states are implemented
+- [x] Custom `404` page exists
+- [x] Documentation is consolidated into this README
+
+## Security Review
+
+- No secrets or `.env` files are committed
+- No unsafe HTML injection patterns are used
+- Contact page does not submit data to a backend
+- The project remains static and frontend-focused
+- No backend endpoints are exposed
+
+## Known Limitations
+
+- The contact form is visual only and does not submit anywhere
+- Deployment URLs are placeholders until the app is deployed
 
 ## Notes
 
