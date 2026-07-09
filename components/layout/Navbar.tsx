@@ -22,8 +22,14 @@ export function Navbar() {
       <SiteContainer className="py-4">
         <div className="flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent text-lg font-semibold text-white shadow-[0_12px_25px_rgba(79,70,229,0.25)]">
-              MJ
+            <span className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-border bg-white shadow-[0_12px_25px_rgba(79,70,229,0.12)]">
+              <img
+                src="/logo.jpg"
+                alt={siteConfig.name}
+                className="h-full w-full rounded-full object-cover"
+                width={44}
+                height={44}
+              />
             </span>
             <span className="flex flex-col">
               <span className="font-display text-lg font-semibold tracking-tight text-slate-950">
