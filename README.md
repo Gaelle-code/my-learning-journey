@@ -1,6 +1,6 @@
-# My Learning Journey Website
+# Gaelle Learning Journey Website
 
-`My Learning Journey Website` is a responsive Next.js App Router project that introduces a student, explains their learning path, and organizes blog-style study notes about frontend, backend, and mobile development.
+`Gaelle Learning Journey Website` is a responsive Next.js App Router project that introduces a student, explains their learning path, and organizes blog-style study notes about frontend, backend, and mobile development.
 
 ## Features
 

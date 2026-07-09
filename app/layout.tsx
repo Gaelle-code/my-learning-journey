@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: [{ url: "/logo.jpg", type: "image/jpg" }],
+    icon: [{ url: "/logo.jpg", type: "image/jpeg+xml" }],
     apple: "/logo.jpg",
   },
 };

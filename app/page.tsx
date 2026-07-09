@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/siteConfig";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Meet the learner behind My Learning Journey and explore the frontend, backend, and mobile notes that shape the site.",
+    "Meet the learner behind Gaelle Learning Journey and explore the frontend, backend, and mobile notes that shape the site.",
 };
 
 export default function HomePage() {
